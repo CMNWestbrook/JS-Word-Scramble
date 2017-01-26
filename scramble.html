@@ -11,6 +11,11 @@
         var WORDS     = ["booger", "apple", "hackbright", "mango"];
         var SCRAMBLED = ["oogreb", "papel", "backrhight", "goman"];
 
+        // for (var word of WORDS) {
+        //     console.log("Scrambled: " + word);
+
+        // }
+
         var playing = true;
 
         // function getRandom() {
@@ -27,7 +32,9 @@
             alert("Unscramble this word:" + scrambledWord);
 
             // Prompt the user to guess the original word when given the scrambled word.
-            var userGuess= prompt("Guess the unscrambled word!");
+            var userInput = prompt("Guess the unscrambled word!");
+
+            var userGuess = userInput.toLowerCase().trim();
 
 
             // If the user guesses wrong, tell them they were wrong and show the right word.
